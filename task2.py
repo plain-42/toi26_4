@@ -1,12 +1,15 @@
 from typing import Generator
 
 def get_prime_number() -> Generator[int, None, None]:
-    num = 1
-    primes = []
+    yield 2
+    yield 3
+
+    num = 3
+    primes = [3] # I check only odd numbers, so 2 not included
     while True:
         is_searching = True
         while is_searching:
-            num += 1
+            num += 2
             is_searching = False
             for p in primes:
                 if num % p == 0:
