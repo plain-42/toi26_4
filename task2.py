@@ -5,7 +5,7 @@ def get_prime_number() -> Generator[int, None, None]:
     yield 3
 
     num = 3
-    primes = [3] # I check only odd numbers, so 2 not included
+    primes = [3] # I check only odd numbers, so 2 is not included
     while True:
         is_searching = True
         while is_searching:
